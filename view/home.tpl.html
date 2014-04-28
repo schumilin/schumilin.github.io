@@ -1,0 +1,45 @@
+
+<div ng-show="kw" class="search_kw">
+    搜索关键词：“{{kw}}”
+</div>
+<div ng-show="cate" class="search_kw">
+    分类：{{cate}} 
+</div>
+<h1 ng-show="!articles">文章加载中...</h1>
+
+<div ng-show="articles.length==0">
+    <h3>没有找到相关文章!</h3>
+</div>
+
+<div ng-repeat="article in articles">
+    <!-- blog entry -->
+    <h1><a href="/article/{{article.objectId}}">{{article.title}}</a></h1>
+    <div class="clearfix">
+        <div class="pull-left">
+        by <a href="javascript:void(0);">{{article.by}}</a>
+        </div>
+         <div class="pull-right">
+             <span class="glyphicon glyphicon-time"></span> 发表于 {{article.createdAt|amCalendar}} 
+         </div>
+    </div>
+    <hr>
+    <img ng-src="{{article.pic}}" class="img-responsive">
+    <hr>
+    <div ng-bind-html="article.content|more|unsafe">
+    </div>
+    <div class="action_bar clearfix">
+        <a class="btn btn-primary" href="/article/{{article.objectId}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+    <a class="btn btn-primary pull-right" ng-show="username" href="javascript:void(0);" ng-click="del($index)"><i class="glyphicon glyphicon-trash"></i>删除</a>
+    <a class="btn btn-primary pull-right" ng-show="username" href="javascript:void(0);" ng-click="edit(article);"><i class="glyphicon glyphicon-pencil"></i>编辑</a>
+    </div>
+    <hr>
+</div>
+
+<!-- pager -->
+<ul class="pager">
+    <li class="previous" ng-class="{disabled:disable_page_prev}"><a href="javascript:void(0);" ng-click="page_prev();">&larr;上一页</a>
+    </li>
+    <li class="next" ng-class="{disabled:disable_page_next}"><a href="javascript:void(0);" ng-click="page_next();">下一页 &rarr;</a>
+    </li>
+</ul>
+
