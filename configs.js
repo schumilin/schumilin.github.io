@@ -1,6 +1,6 @@
 var airpubConfigs = {
-  name: 'Airpub',
-  description: '轻如蝉翼的写作工具',
+  name: '天照',
+  description: 'あまてらす',
   url: 'http://schumilin.github.io',
   // blog theme
   // theme: 'my-theme',
