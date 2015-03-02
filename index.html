@@ -1,0 +1,192 @@
+<html lang="zh-cmn-Hans">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="Cache-Control" content="no-siteapp" />
+        <meta name="author" content="weibo@Shinlol">
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="apple-mobile-web-app-title" content="蔚蓝">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://img.wdjimg.com/mms/icon/v1/4/4b/2158a54d3c9340205c193f0e963204b4_256_256.png">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>蔚蓝</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>北京空气质量</h1>
+            <span class="refresh"></span>
+        </div>
+        <div id="pageWrapper">
+            <div id="pageScroller">
+                <div class="page">
+                    <div id="wrapper4" class="child-wrapper citys">
+                        <div class="scroller">
+                            <div class="my-city">
+                                <span class="mycity-name">北京</span>
+                                <span class="mycity-rank">今日排名：<b>--</b></span>
+                                <span class="mycity-aqi">污染指数：<b>--</b></span>
+                            </div>
+                            <div id="citysChart"></div>
+                            <p class="footer-time">数据更新时间：<span class="nt"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page">
+                    <div id="wrapper1" class="child-wrapper summary">
+                        <div class="scroller">
+                            <div class="top-bar">
+                                <span class="pm25-icon">空气质量：<span class="level"></span></span>
+                                <span class="date"></span>
+                                <span class="time"></span>
+                            </div>
+                            <div class="dashboard">
+                                <div class="big-bang">
+                                    <span class="aqi-number">--</span>
+                                </div>
+                                <div class="threesome-wrap">
+                                    <div class="threesome">
+                                        <span class="threesome-icon">佩戴口罩</span>
+                                        <span class="threesome-number kouzhao">--</span>
+                                    </div>
+                                    <div class="threesome">
+                                        <span class="threesome-icon">开窗通风</span>
+                                        <span class="threesome-number kaichuang">--</span>
+                                    </div>
+                                    <div class="threesome">
+                                        <span class="threesome-icon">户外活动</span>
+                                        <span class="threesome-number jinghuaqi">--</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guess">
+                                <p class="main-guess">--</p>
+                                <p class="sub-guess">--</p>
+                            </div>
+                            <div id="aqiChart"></div>
+                            <div class="weather-info">
+                                <div class="weather-threesome">
+                                    <img class="weather-icon" src="img/day-icon.png"></img>
+                                    <span>气温</span>
+                                    <span class="day-temperature">--</span>
+                                </div>
+                                <div class="weather-threesome">
+                                    <img class="weather-icon" src="img/night-icon.png"></img>
+                                    <span>湿度</span>
+                                    <span class="humidity">--</span>
+                                </div>
+                                <div class="weather-threesome">
+                                    <img class="weather-icon" src="img/wind-icon.png"></img>
+                                    <span class="wind-direction">风向</span>
+                                    <span class="wind-level">--</span>
+                                </div>
+                            </div>
+                            <p class="copyright">Copyright © 2013 - 2015 Shinlol</p>
+                            <p class="copyright">Contact: Weibo@Shinlol</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page">
+                    <div id="wrapper2" class="child-wrapper detail">
+                        <div class="scroller">
+                            <div class="detail-dashboard">
+                                <div class="section china">
+                                    <div class="eins">
+                                        <span class="number">--</span>
+                                        <div class="zwei">
+                                            <p>
+                                                <span class="big">环保部</span>
+                                                <span class="small">中国标准</span>
+                                            </p>
+                                            <p>
+                                                <span class="level big">--</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="drei">
+                                        <span class="box">
+                                            <span class="box-title">PM2.5:&nbsp;</span>
+                                            <span class="box-number"><b class="pm25-detail">--</b>&nbsp;ug/m3</span>
+                                        </span>
+                                        <span class="box">
+                                            <span class="box-title">PM10:&nbsp;</span>
+                                            <span class="box-number"><b class="pm10-detail">--</b>&nbsp;ug/m3</span>
+                                        </span>
+                                        <span class="box">
+                                            <span class="box-title">NO2:&nbsp;</span>
+                                            <span class="box-number"><b class="no2-detail">--</b>&nbsp;ug/m3</span>
+                                        </span>
+                                        <span class="box">
+                                            <span class="box-title">SO2:&nbsp;</span>
+                                            <span class="box-number"><b class="so2-detail">--</b>&nbsp;ug/m3</span>
+                                        </span>
+                                    </div>
+                                    <div class="detail-intro">
+                                        <div class="intro-intro">重度污染：应减少户外活动，外出时佩戴口罩，敏感人群应留在室内。老年人及心脏、呼吸系统疾病患者人群应留在室内，停止户外运动，一般人群减少户外运动。 </div>
+                                    </div>
+                                </div>
+                                <div class="section us">
+                                    <div class="eins">
+                                        <span class="number">--</span>
+                                        <div class="zwei">
+                                            <p>
+                                                <span class="big">美使馆</span>
+                                                <span class="small">美国标准</span>
+                                            </p>
+                                            <p>
+                                                <span class="us-level big">--</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="drei">
+                                        <span class="box">
+                                            <span class="box-title">PM2.5:&nbsp;</span>
+                                            <span class="box-number"><b class="us-pm25-detail">--</b>&nbsp;ug/m3</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="monthChart"></div>
+                            <p class="footer-time">数据更新时间：<span class="nt"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page">
+                    <div id="wrapper3" class="child-wrapper points">
+                        <div class="scroller">
+                            <div class="point-suggest">
+                                <span>状况分析：</span>
+                                <p></p>
+                            </div>
+                            <div id="pointsChart"></div>
+                            <p class="footer-time">数据更新时间：<span class="nt"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="refresh-loading">
+            <div class="loader" title="2">
+                <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+                <animateTransform attributeType="xml"
+                  attributeName="transform"
+                  type="rotate"
+                  from="0 25 25"
+                  to="360 25 25"
+                  dur="0.6s"
+                  repeatCount="indefinite"/>
+                </path>
+              </svg>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/iscroll.js"></script>
+        <script type="text/javascript" src="js/av-0.3.1.min.js"></script>
+        <script type="text/javascript" src="js/highcharts.src.js"></script>
+        <script type="text/javascript" src="js/exporting.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
