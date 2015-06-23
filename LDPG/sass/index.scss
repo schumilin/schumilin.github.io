@@ -1,0 +1,98 @@
+@import 'compass';
+
+$white: #fff;
+$font-base: "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font: normal 75% $font-base;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(farthest-corner at 50% 0, #5F9CE9 0%, #002A5F 100%);
+    text-align: center;
+
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    .strut {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .content {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        z-index: 1;
+
+        .logo {
+            width: 161px;
+            height: 85px;
+        }
+        h1 {
+            color: $white;
+            font-size: 32px;
+            margin: 25px 0;
+        }
+        h2 {
+            font-size: 14px;
+            color: $white;
+            margin-bottom: 100px;
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            &::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 100px;
+                height: 1px;
+                margin-right: 20px;
+                background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, transparent), color-stop(100%, $white));
+            }
+            &::after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                width: 100px;
+                height: 1px;
+                margin-left: 20px;
+                background-image: -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, transparent), color-stop(100%, $white));
+            }
+        }
+        .dl-btn {
+            display: block;
+            margin: 0 auto;
+            width: 130px;
+            line-height: 36px;
+            border: 1px solid $white;
+            border-radius: 3px;
+            color: $white;
+            font-size: 14px;
+            @include transition(all 0.5s);
+
+            &:hover {
+                background-color: $white;
+                color: #295FA4;
+            }
+        }
+    }
+}

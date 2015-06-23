@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    body {
+        margin: 0;
+    }
+    .content {
+        background-attachment: fixed;
+        height: 400px;
+    }
+    #content1 {
+        background-color: #fff;
+    }
+    #content2 {
+        background-image: url("http://ocdn.eu/images/pulscms/ZjU7MDQsMCwzMiwzODQsMWZhOzA2LDMyMCwxYzI_/1eb29a70dabd0994cdefaad01ca3c884.jpg");
+    }
+    #content3 {
+        background-color: #fff;
+        background-image: url("http://www.zeus.aegee.org/magazine/wp-content/uploads/napoli-golfo-vesuvio.jpg");
+    }
+    #content4 {
+        background-image: url("http://www.tamperlock.com/blog/wp-content/uploads/2014/08/london-england.jpg");
+    }
+    #content5 {
+        background-color: #fff;
+        background-image: url("http://ocdn.eu/images/pulscms/ZjU7MDQsMCwzMiwzODQsMWZhOzA2LDMyMCwxYzI_/1eb29a70dabd0994cdefaad01ca3c884.jpg");
+    }
+    #content6 {
+        background-image: url("http://www.zeus.aegee.org/magazine/wp-content/uploads/napoli-golfo-vesuvio.jpg");
+    }
+    </style>
+</head>
+<body>
+    <div class="content" id="content1">
+        <p>第一段</p>
+    </div>
+    <div class="content" id="content2">
+        <p>第一段</p>
+    </div>
+    <div class="content" id="content3">
+        <p>第一段</p>
+    </div>
+    <div class="content" id="content4" data-stellar-background-ratio="0.5">
+        <p>第一段</p>
+    </div>
+    <div class="content" id="content5" data-stellar-background-ratio="0.5">
+        <p>第一段</p>
+    </div>
+    <div class="content" id="content6" data-stellar-background-ratio="0.5">
+        <p>第一段</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+    <script>
+    $.stellar({
+        horizontalScrolling: false,
+        responsive: true
+    });
+    </script>
+</body>
+</html>
