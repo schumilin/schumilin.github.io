@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <style>
     body {
         margin: 0;
     }
     .content {
+        overflow: hidden;
         background-attachment: fixed;
         height: 400px;
     }
@@ -15,21 +17,19 @@
         background-color: #fff;
     }
     #content2 {
-        background-image: url("http://ocdn.eu/images/pulscms/ZjU7MDQsMCwzMiwzODQsMWZhOzA2LDMyMCwxYzI_/1eb29a70dabd0994cdefaad01ca3c884.jpg");
+        background-image: url("img/bg1.png");
     }
     #content3 {
         background-color: #fff;
-        background-image: url("http://www.zeus.aegee.org/magazine/wp-content/uploads/napoli-golfo-vesuvio.jpg");
     }
     #content4 {
-        background-image: url("http://www.tamperlock.com/blog/wp-content/uploads/2014/08/london-england.jpg");
+        background-image: url("img/bg2.png");
     }
     #content5 {
         background-color: #fff;
-        background-image: url("http://ocdn.eu/images/pulscms/ZjU7MDQsMCwzMiwzODQsMWZhOzA2LDMyMCwxYzI_/1eb29a70dabd0994cdefaad01ca3c884.jpg");
     }
     #content6 {
-        background-image: url("http://www.zeus.aegee.org/magazine/wp-content/uploads/napoli-golfo-vesuvio.jpg");
+        background-color: #555;
     }
     </style>
 </head>
@@ -37,7 +37,7 @@
     <div class="content" id="content1">
         <p>第一段</p>
     </div>
-    <div class="content" id="content2">
+    <div class="content" id="content2" data-stellar-background-ratio="0.5">
         <p>第一段</p>
     </div>
     <div class="content" id="content3">
@@ -46,10 +46,10 @@
     <div class="content" id="content4" data-stellar-background-ratio="0.5">
         <p>第一段</p>
     </div>
-    <div class="content" id="content5" data-stellar-background-ratio="0.5">
+    <div class="content" id="content5">
         <p>第一段</p>
     </div>
-    <div class="content" id="content6" data-stellar-background-ratio="0.5">
+    <div class="content" id="content6">
         <p>第一段</p>
     </div>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
