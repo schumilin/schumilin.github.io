@@ -52,10 +52,15 @@ section {
     .date, .location {
         text-align: center;
         margin: 28px 0;
+
+        strong {
+            font-size: 16px;
+        }
     }
     .parking-info {
         margin: 15px 0;
-        padding-left: 25px;
+        padding: 0 0 0 10px;
+        list-style-type: none;
     }
     img {
         display: block;
